@@ -1,17 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <div class="position-relative" style="height: 100vh;">
+      <!-- Carousel -->
+      <div class="carousel slide h-100" id="carouselExample" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="assets/img/building-1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="..." />
+          </div>
+          <div class="carousel-item h-100">
+            <img src="assets/img/building-2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="..." />
+          </div>
+          <div class="carousel-item h-100">
+            <img src="assets/img/building-3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <header class="position-absolute top-0 w-100 z-3">
+        <nav class="navbar navbar-expand-lg py-3 bg-transparent bg-sm-blue bg-md-blue">
+          <div class="container">
+            <a class="mx-auto" href="/index.html">
+              <img class="img-fluid" src="assets/img/Logo-2-1.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end bg-dark text-white"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item font-family-arimo-regular">
+                    <a class="nav-link active text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item font-family-arimo-regular">
+                    <a class="nav-link text-white" href="#">Properties</a>
+                  </li>
+                  <li class="nav-item font-family-arimo-regular">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item font-family-arimo-regular">
+                    <a class="nav-link text-white" href="#">Our Team</a>
+                  </li>
+                  <li class="nav-item font-family-arimo-regular">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown font-family-arimo-regular">
+                    <a
+                      class="nav-link dropdown-toggle text-white"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      English
+                    </a>
+                    <ul class="dropdown-menu font-family-arimo-regular">
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container position-absolute top-50 start-50 translate-middle z-2">
+        <div class="row">
+          <div class="col-12 pb-lg-5 pb-sm-5">
+            <h1 class="text-white text-center fs-h1 font-family-arimo-bold">
+              LOOKING FOR RETAIL, OFFICE, OR INDUSTRIAL SPACE?
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Box-->
+      <div class="bg-darkblue position-absolute bottom-0 w-100 z-2">
+        <div class="container py-3">
+          <p class="text-white fs-5 font-family-arimo-regular">Search our properties</p>
+          <div class="bg-white p-4 rounded shadow">
+            <div class="row g-2 justify-content-center">
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>Property Type</option>
+                  <option value="1">Office</option>
+                  <option value="2">Residential</option>
+                  <option value="3">Industrial</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>All Regions</option>
+                  <option value="1">Quebec</option>
+                  <option value="2">Ontario</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>All Neighbourhoods</option>
+                  <option value="1">Neighbourhood 1</option>
+                  <option value="2">Neighbourhood 2</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3 d-grid font-family-arimo-regular">
+                <button class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -70,3 +70,38 @@
 .object-fit-cover {
   object-fit: cover;
 }
+.fs-h2 {
+  line-height: 30px;
+  color: gray;
+}
+.bg-main-blue{
+  background-color:#01234e;
+}
+.btn-main{
+  background-color:#01234e;
+  color: white;
+}
+.btn-main:hover{
+  background-color:#2f5e99;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .fs-sm {
+    font-size: 15px;
+  }
+}
+.btn-homepage{
+  background-color:#ffffff;
+  color: #01234e;
+  border: 2px solid #01234e;
+  border-radius: 0px;
+  font-weight: 600;
+}
+.btn-homepage:hover{
+  background-color:#2f5e99;
+  color: white;
+}
+.color-h2{
+color: #01234e;
+}

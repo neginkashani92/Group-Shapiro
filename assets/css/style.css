@@ -105,3 +105,8 @@
 .color-h2{
 color: #01234e;
 }
+
+footer input:focus{
+  background: transparent !important;
+  color: white !important;
+}

@@ -39,7 +39,7 @@
   font-size: 60px;
   line-height: 100px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991.98px) {
   .fs-h1 {
     font-size: 30px;
     line-height: 60px;
@@ -109,4 +109,25 @@ color: #01234e;
 footer input:focus{
   background: transparent !important;
   color: white !important;
+}
+
+.fs-h1-about-us {
+  font-size: 50px;
+  line-height: 70px;
+}
+@media (max-width: 767px) {
+  .fs-h1-about-us {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+.logo-about {
+  width: 100px;
+  height: 80px;
+}
+.about-us-header{
+  background: url('../img/building-1-2.jpg');
+}
+.pt-12{
+  padding-top: 12rem;
 }

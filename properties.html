@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties</title>
+        <!-- <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="container-fluid px-0 properties-header">
+        <!-- Navbar -->
+        <header class="position-absolute top-0 w-100 z-3">
+          <nav
+            class="navbar navbar-expand-lg py-3 bg-transparent bg-sm-blue bg-md-blue"
+          >
+            <div class="container">
+              <a class="mx-auto" href="/index.html">
+                <img class="img-fluid" src="assets/img/Logo-2-1.png" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end bg-md-blue text-white"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item font-family-arimo-regular">
+                      <a class="nav-link active text-white" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item font-family-arimo-regular">
+                      <a class="nav-link text-white" href="#">Properties</a>
+                    </li>
+                    <li class="nav-item font-family-arimo-regular">
+                      <a class="nav-link text-white" href="about us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="nav-item font-family-arimo-regular">
+                      <a class="nav-link text-white" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item font-family-arimo-regular">
+                      <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown font-family-arimo-regular">
+                      <a
+                        class="nav-link dropdown-toggle text-white"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        English
+                      </a>
+                      <ul class="dropdown-menu font-family-arimo-regular">
+                        <li><a class="dropdown-item" href="#">French</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="container h-100 d-flex justify-content-center align-items-center position-relative z-2">
+            <h1 class="text-white text-center font-family-arimo-bold fs-h1">
+              PROPERTIES
+            </h1>
+          </div>
+      </div>
+      <!-- Search Box-->
+      <div class=" w-100 z-2">
+        <div class="container pt-3 pb-5">
+          <p class="text-white fs-5 font-family-arimo-regular">
+            Search our properties
+          </p>
+          <div class="bg-darkblue p-4 rounded shadow">
+            <div class="row g-2 justify-content-center">
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>Property Type</option>
+                  <option value="1">Office</option>
+                  <option value="2">Residential</option>
+                  <option value="3">Industrial</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>All Regions</option>
+                  <option value="1">Quebec</option>
+                  <option value="2">Ontario</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <select class="form-select font-family-arimo-regular">
+                  <option selected>All Neighbourhoods</option>
+                  <option value="1">Neighbourhood 1</option>
+                  <option value="2">Neighbourhood 2</option>
+                </select>
+              </div>
+              <div
+                class="col-12 col-sm-12 col-md-3 d-grid font-family-arimo-regular"
+              >
+                <button class="btn btn-main">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="container">
+        <div class="row pt-5 d-flex justify-content-between">
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/IMG_0817-592x444.jpg" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">3700 Griffith</h5>
+                      <p class="card-text"> 
+                        <i class="fa-solid fa-location-dot"></i> 3700 Griffith, Saint-Laurent, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/IMG_0890-1-592x444.jpg" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">2500 Guenette</h5>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 2500 Guenette, Saint-Laurent, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/21-Aviation-1-592x444.jpg" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">2270-2290 De La Province</h5>
+                      <p class="card-text"> <i class="fa-solid fa-location-dot"></i> 2270-2290 De La Province, Longueuil, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="row py-5 d-flex justify-content-between">
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/Screenshot-2023-06-19-150331-592x444.jpg" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">165 Blvd. Ste-Madeleine</h5>
+                      <p class="card-text"> <i class="fa-solid fa-location-dot"></i> 165 Blvd. Ste-Madeleine, Trois-Rivières, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/Screenshot-2023-07-04-135909-592x444.jpg" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">795 George V Ave.</h5>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 795 George V Ave. (Metso), Lachine, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <a href="#">
+                    <img src="assets/img/properties/Screenshot-2024-06-18-150958-592x444.png" class="card-img-top" alt="...">
+                  </a>
+                    <div class="card-body">
+                      <h5 class="card-title">255 Hymus</h5>
+                      <p class="card-text"><i class="fa-solid fa-location-dot"></i> 225 Hymus, Pointe-Claire, Quebec, Canada.</p>
+                      <a href="#" class="btn btn-main">more</a>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+      </div>
+        <!-- start footer -->
+     <footer class="bg-main-blue">
+      <div class="container">
+        <div class="row pt-5 ps-lg-5">
+          <div class="col-12 col-lg-6 pb-5">
+            <img src="assets/img/Logo-2-1.png" alt="logo" class="pt-5" />
+            <p class="text-white font-family-arimo-bold py-4">
+              SIGN UP FOR OUR MAILING LIST
+            </p>
+
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <label
+                  for="firstName"
+                  class="form-label font-family-arimo-bold fs-h2"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control font-family-arimo-regular fs-h2 bg-main-blue"
+                  id="firstName"
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label
+                  for="lastName"
+                  class="form-label font-family-arimo-bold fs-h2"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control font-family-arimo-regular fs-h2 bg-main-blue"
+                  id="lastName"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <label
+                  for="email"
+                  class="form-label font-family-arimo-bold fs-h2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control font-family-arimo-regular fs-h2 bg-main-blue"
+                  id="email"
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label
+                  for="phone"
+                  class="form-label font-family-arimo-bold fs-h2"
+                  >company</label
+                >
+                <input
+                  type="tel"
+                  class="form-control font-family-arimo-regular fs-h2 bg-main-blue"
+                  id="phone"
+                />
+              </div>
+            </div>
+            <div class="col-auto mt-3">
+              <button type="submit" class="btn btn-homepage mb-3">
+                sign up
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 ps-lg-5 pb-5">
+            <p class="text-white fs-4 pt-5">CONTACT US</p>
+            <p class="text-white pt-3">
+              <i class="fa-solid fa-location-dot"></i
+              ><a
+                href="https://www.google.com/maps/place/800+Rue+du+Square-Victoria+%23630,+Montr%C3%A9al,+QC+H4Z+1C3/@45.5004528,-73.5620153,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91a5b8cc52197:0x844be38bb1a46d6a!8m2!3d45.5004528!4d-73.5620153?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+                target="blank"
+                class="text-decoration-none text-white"
+              >
+                Address: 800 Rue du Square-Victoria, suite #630, <br />
+                Montreal, Quebec, Canada, H4Z 1C3
+              </a>
+            </p>
+            <p class="font-family-arimo-regular text-white">
+              <i class="fa-solid fa-phone"></i> Phone:
+              <a
+                href="tel:+1234567890"
+                class="text-decoration-none font-family-arimo-regular text-white"
+                >+1 (234) 567-890</a
+              >
+            </p>
+            <p class="font-family-arimo-regular text-white">
+              <i class="fa-solid fa-envelope pe-1"></i>Email:
+              <a
+                href="mailto:example@example.com"
+                class="text-decoration-none font-family-arimo-regular text-white"
+                >example@example.com</a
+              >
+            </p>
+            <p class="text-white fs-4 pt-5">FOLLOW US</p>
+            <p>
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+              />
+
+              <a
+                href="https://www.facebook.com/shapirogroup/"
+                target="_blank"
+                class="text-decoration-none text-primary"
+              >
+                <i class="fab fa-facebook fs-4 text-white"></i>
+              </a>
+
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+              />
+
+              <a
+                href="https://www.linkedin.com/company/the-shapiro-group/?originalSubdomain=ca"
+                target="_blank"
+                class="text-decoration-none text-primary"
+              >
+                <i class="fab fa-linkedin fs-4 text-white ps-3"></i>
+              </a>
+            </p>
+          </div>
+          <hr class="text-white">
+          <div>
+            <p class="text-white">© 2025 Groupe Shapiro | All Rights Reserved | <a href="https://kanguru.ca/" class="text-white text-decoration-none">Kanguru Digital Agency</a> | <a href="#" class="text-white text-decoration-none">Terms of use</a>​</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-main-blue position-fixed bottom-0 end-0 px-4 d-lg-block d-none">
+      <p class="font-family-arimo-regular mb-0 pt-3 font-family-Playfair-bold" style="color: #8ba2b9;">
+        <i class="fa-solid fa-phone me-1"></i>Contact us 
+        <p>
+          <a
+            href="tel:+1234567890"
+            class="text-decoration-none font-family-arimo-regular text-white"
+            >514-565-5000</a
+          >
+        </p>
+      </p>
+    </div>
+</body>
+</html>

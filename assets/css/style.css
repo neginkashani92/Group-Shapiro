@@ -165,3 +165,6 @@ footer input:focus{
   background-color: #01234e6e;
   z-index: 2;
 }
+.right-0 {
+  right: 0;
+}

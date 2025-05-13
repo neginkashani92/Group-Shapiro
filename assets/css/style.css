@@ -180,3 +180,6 @@ footer input:focus{
     font-weight: 700;
     text-decoration: underline;
   }
+.right-0 {
+  right: 0;
+}
